@@ -1,0 +1,66 @@
+.HeaderContainer{
+    width: 100vw;
+    height: 15vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: hidden;
+}
+.HeaderLogo{
+    font-size: 2.0em;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.HeaderNavOPen{
+    display: none;
+}
+.HeaderNav a{
+    
+    padding: 20px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+   
+}
+.HeaderNav a:hover{
+    color: rgb(255, 174, 0);
+}
+.HeaderNav .HeaderNavBtn{
+    color: white;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.4em;
+    border-radius: 50px;
+    background-color: rgb(255, 123, 0);
+}
+.HeaderNav .HeaderNavBtn:hover{
+    color: white;
+}
+.HeaderNavOPen .HeaderNavBtn{
+    color: white;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.4em;
+    border-radius: 50px;
+    background-color: rgb(255, 123, 0);
+}
+.HeaderNavOPen .HeaderNavBtn:hover{
+    color: white;
+}
+@media only screen and (max-width: 850px) {
+    .HeaderNav a{
+        display: none;
+    }
+    .HeaderNavOPen{
+        display: inline;
+    }
+  }

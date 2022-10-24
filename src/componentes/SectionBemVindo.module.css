@@ -1,0 +1,137 @@
+.SectionContainer{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 2vh;
+}
+.SectionBox{
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50%  40%;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.SectionBox div{
+    height: 70vh;
+}
+.SectionDivTexts{
+    font-family: 'Times New Roman', Times, serif
+}
+.SectionDivTexts p{
+    font-size: 1.2em;
+    text-align: start;
+    color: black;
+}
+.SectionDivTexts h1{
+    font-size: 3.8em;
+    padding: 15px;
+    color: rgb(255, 81, 0);
+}
+.SectionDivTexts h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-align: start;
+    color: rgb(0, 0, 0);
+}
+.SectionDivTexts .Text{
+    font-size: 1.1em;
+    padding-top: 20px;
+    color: rgb(68, 64, 64);
+}
+.SectionDivTexts div{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    width: 20vw;
+    margin-top: 5vh;
+    border-radius: 50px;
+    justify-content: center;
+    cursor: pointer;
+}.SectionDivTexts div:hover{
+    background-color: rgb(90, 88, 88);
+}
+.SectionDivImg{
+    height: 85vh;
+    background-image: url('https://img.freepik.com/fotos-gratis/jovens-bonitas-mulher-comendo-pizza-em-um-bar_1303-19911.jpg?w=360');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 88% 8%;
+    justify-content: center;
+    align-items: end;
+}
+.SectionDivImg h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.8em;
+    display: block;
+}
+.SectionDivImg p{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    display: block;
+}
+@media only screen and (max-width: 830px){
+    
+    .SectionBox{
+        width: 80vw;
+        height: 80vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .SectionDivTexts{
+        width: 70vw;
+    }
+    .SectionDivTexts h2{
+        text-align: center;
+        padding-bottom: 4vh;
+    }
+    .SectionDivImg{
+        display: none;
+    }
+    .SectionDivTexts div{
+        width: 30vw;
+    }
+    
+}
+@media only screen and (max-width: 550px){
+    .SectionContainer{
+        
+        height: 84vh;
+        
+    }
+    .SectionBox{
+        width: 100vw;
+        height: 100vh;    
+        
+    }
+    .SectionDivTexts{
+        width: 90vw;
+        overflow: hidden;
+    }
+    .SectionDivImg{
+        margin-top: 10vh;
+        z-index: 100;
+    }
+    .SectionDivTexts h2{
+        font-size: 1.6em;
+        text-align: center;
+        padding-bottom: 0vh;
+    }
+    .SectionDivTexts h1{
+        font-size: 2.9em;
+    }
+    .SectionDivTexts div{
+        width: 40vw;
+    }
+}

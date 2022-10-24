@@ -1,0 +1,41 @@
+.SectionContainer{
+    width: 100vw;
+    height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://www.melhoresdestinos.com.br/wp-content/uploads/2022/09/melhores-pizzarias-mundo-capa.jpg');
+    display: flex;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+.SectionContain{
+    
+    width: 40vw;
+    height: 40vh;
+}
+.SectionContain h1{
+    font-family: 'Times New Roman', Times, serif;
+
+    padding: 10px;
+    font-size: 4em;
+    color: white;
+}
+.SectionContain h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 123, 0);
+    font-size: 1.7em;
+    padding: 20px;
+}
+.SectionContain p{
+    font-family: 1.5;
+    color: rgb(87, 82, 82);
+}
+@media only screen and (max-width: 600px) {
+
+    .SectionContain{
+        width: 100vw;
+        height: 40vh;
+    }
+}
